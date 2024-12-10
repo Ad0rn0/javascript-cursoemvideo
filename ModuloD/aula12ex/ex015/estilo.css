@@ -1,0 +1,36 @@
+body {
+    background: rgb(70, 142, 236);
+    font: normal 15pt arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#res {
+    display: flex;
+    flex-direction: column; /* Define a direção como coluna (um elemento abaixo do outro) */
+    align-items: center;    /* Centraliza os itens horizontalmente */
+}
