@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Analyzer</title>
+</head>
+
+<body>
+    <header>
+        <h1>Number analyzer</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="num">Number (in 1 and 100):</label>
+                <input type="number" name="num" id="num">
+                <button onclick="addNumber()">Add Number</button>
+            </p>
+        </div>
+        <div>
+            <p>
+                <select name="select" id="select" size="6">
+
+                </select>
+            </p>
+            <button onclick="sendAnalyze()">Send</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Ornement Company</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
