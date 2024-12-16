@@ -34,18 +34,24 @@ function sendAnalyze() {
 
 function showResults() {
     var a = document.createElement('p')
-    a.innerHTML = `Ao todo, temos ${count()} números cadastrados.`
+    a.innerHTML = `We have ${count()} numbers`
     fragment.appendChild(a)
 
     var b = document.createElement('p')
-    b.innerHTML = `O maior valor informado foi ${max()}`
+    b.innerHTML = `The max value is ${max()}`
     fragment.appendChild(b)
 
     var c = document.createElement('p')
-    c.innerHTML = `O menor valor informado foi ${min()}`
+    c.innerHTML = `The min value is ${min()}`
     fragment.appendChild(c)
 
+    var d = document.createElement('p')
+    d.innerHTML = `The sum of all values is ${sum()}`
+    fragment.appendChild(d)
 
+    var e = document.createElement('p')
+    e.innerHTML = `The average of all values is ${average()}`
+    fragment.appendChild(e)
 
     return fragment
 }
@@ -75,7 +81,7 @@ function min() {
 }
 
 function sum() {
-
+    var
 }
 
 function average() {
