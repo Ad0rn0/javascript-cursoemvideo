@@ -26,3 +26,7 @@ footer {
 div {
     margin: 5px;
 }
+
+select#select {
+    width: 150px;
+}

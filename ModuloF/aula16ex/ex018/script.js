@@ -10,16 +10,20 @@ function addNumber() {
 
     if (number.value < 1 || number.value > 100) {
         window.alert('Select a valid number!')
+        number.value = ''
+        number.focus()
     } else {
         if (numbers.indexOf(number.value) != -1) {
             window.alert(`The number ${number.value} is already in the list. Please, select another number`)
             number.value = ''
+            number.focus()
         } else {
             numbers.push(number.value)
             var opc = document.createElement('option')
             opc.text = `Valor ${number.value} adicionado.`
             select.appendChild(opc)
             number.value = ''
+            number.focus()
         }
     }
 }
@@ -61,17 +65,17 @@ function count() {
 }
 
 function max() {
-    var maxNum = 0
-    for (var num in numbers) {
-        if (num > maxNum) {
-            maxNum = num
+    var maxNum = numbers[0]
+    for (var i = 0; i < numbers.length; i++) {
+        if (numbers[i] > maxNum) {
+            maxNum = numbers[i]
         }
     }
     return maxNum
 }
 
 function min() {
-    var minNum = 0
+    var minNum = numbers[0]
     for (var i = 0; i < numbers.length; i++) {
         if (numbers[i] < minNum){
             minNum = numbers[i]
@@ -81,9 +85,19 @@ function min() {
 }
 
 function sum() {
-    var
+    var sum = 0
+    for (var i = 0; i < numbers.length; i++) {
+        sum += Number(numbers[i])
+    }
+    return sum
 }
 
 function average() {
-
+    var average = 0
+    var sum = 0
+    for (var i = 0; i < numbers.length; i++) {
+        sum += Number(numbers[i])
+    }
+    average = sum / numbers.length
+    return average
 }
